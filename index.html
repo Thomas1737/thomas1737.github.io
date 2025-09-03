@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hanei Brand Communications</title>
+  <style>
+    :root {
+      --blue: #0a47a1;
+      --white: #ffffff;
+      --light-grey: #f4f7fb;
+      --text-color: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: var(--light-grey);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: var(--blue);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .nav-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .nav-title {
+      color: var(--white);
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: var(--white);
+      padding: 35px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: var(--blue);
+      border-bottom: 2px solid var(--blue);
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      color: var(--blue);
+      font-size: 1.2rem;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul li::before {
+      content: "•";
+      color: var(--blue);
+      position: absolute;
+      left: 0;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links a {
+        margin: 8px 0 0;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-title">Hanei Brand Communications</div>
+      <div class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container">
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We craft brand identities and digital experiences that stand out.
+        Our focus is on delivering bold, distinctive branding and effective
+        marketing strategies that resonate with your audience and elevate your presence.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <h3>1) Digital Marketing</h3>
+      <ul>
+        <li>Social strategy & execution</li>
+        <li>Paid Media</li>
+        <li>Campaign Analytics</li>
+        <li>Email and content</li>
+      </ul>
+
+      <h3>2) Branding and Identity</h3>
+      <ul>
+        <li>Brand discovery and positioning</li>
+        <li>Visual identity systems</li>
+        <li>Name and tone of voice</li>
+        <li>Guidelines and rollout support</li>
+      </ul>
+
+      <h3>3) Creative and Design</h3>
+      <ul>
+        <li>Graphic design (print and digital)</li>
+        <li>UI/UX concepts, mock-ups</li>
+        <li>Ad campaign design</li>
+        <li>Packaging and print design</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p class="contact">
+        Email: <a href="mailto:thomasjacob@haneibrand.com">thomasjacob@haneibrand.com</a>
+      </p>
+    </section>
+
+  </div>
+</body>
+</html>
