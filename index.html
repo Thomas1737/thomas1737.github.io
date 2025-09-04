@@ -186,78 +186,21 @@
       </ul>
     </section>
 <section id="contact">
-  <h1 style="color: black;
-    font-size: 32px; text-align:
-    center;">contact</h1>h1>
-  <form action="https://formsubmit.co/thomasjacob@haneibrand.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
+  <h1 style="text-align: center;">Contact</h1>
+  <p style="text-align: center;">Please fill in the form below</p>
 
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Question" required></textarea>
+  <form action="mailto:thomasjacob@haneibrand.com" method="POST" enctype="text/plain" style="max-width: 400px; margin: 0 auto;">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 12px;"><br>
 
-    <button type="submit">Send Question</button>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 12px;"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 12px;"></textarea><br>
+
+    <button type="submit" style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer;">
+      Send
+    </button>
   </form>
 </section>
-
-<style>
-  #contact {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    border-radius: 10px;
-  }
-
-  #contact h2 {
-    text-align: center;
-    color: #333;
-  }
-
-  #contact p {
-    text-align: center;
-    color: #555;
-  }
-
-  #contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-  }
-
-  #contact input, #contact textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-
-  #contact button {
-    padding: 12px;
-    font-size: 16px;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  #contact button:hover {
-    background: #0056b3;
-  }
-</style>
-
-    
-
-
-
-
-
-
-
-
-
-
